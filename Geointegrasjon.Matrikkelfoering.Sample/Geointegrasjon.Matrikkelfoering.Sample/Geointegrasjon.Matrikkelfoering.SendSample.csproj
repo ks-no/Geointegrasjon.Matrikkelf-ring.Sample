@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Geointegrasjon.Matrikkelfoering.Sample</RootNamespace>
     <AssemblyName>Geointegrasjon.Matrikkelfoering.Sample</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GenerateN0.cs" />
+    <Compile Include="GenerateN2N3_NOIS.cs" />
     <Compile Include="GenerateN4.cs" />
     <Compile Include="GenerateN3.cs" />
     <Compile Include="GenerateN2.cs" />
@@ -56,7 +58,9 @@
     <Compile Include="SvarUtForsendelse8.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="giFellesGeometri20120131.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -71,6 +75,24 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="samplefiles\bim.ifc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="samplefiles\DokSitplan.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="samplefiles\DokTegning.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="samplefiles\medFeil_OneWall.ifc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="samplefiles\NTNU Retorten eByggesak v23.ifc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="samplefiles\NTNU Retorten eByggesak.ifc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="samplefiles\NTNU Retorten eByggesak.medFeil.ifc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
